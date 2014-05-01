@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Brackets | CLA Check
+  p Brackets CLA Check
+
+  unless checkSuccessful
+    if checkFailed
+        img(src='/images/false.gif')
+    
+    form(name="checkcla", action="/cla/checksigned", method="post")
+      input(type="text", name="contributor")
+      input(type="submit", value="check")
+  else
+    img(src='/images/true.gif')
+    br
+    a(href='/cla/check') Check again!
