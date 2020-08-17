@@ -17,7 +17,7 @@
     "googleclientlogin": "^0.2.8",
     "jade": "~1.3.1",
     "less-middleware": "1.0.3",
-    "lodash": "^2.4.1",
+    "lodash": "^4.17.20",
     "morgan": "~1.1.1",
     "pdf2json": "^0.6.7",
     "serve-favicon": "^2.0.0",
